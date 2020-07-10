@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ONE VAY</title>
+	<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" /> -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<header class="header_main index fixed-header">
+    <div class="header_min">
+    	<div class="container">
+	        <nav class="navbar nav-sec">
+	            <div class="container-fluid">
+	                <!-- Brand and toggle get grouped for better mobile display -->
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="index.html">One Vay</a>
+	                </div>
+	                <!-- Collect the nav links, forms, and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                    <ul class="nav navbar-nav navbar-right navigation-ul">
+	                        <li class=""><a href="aboutUs.html"> About Us </a></li>
+	                        <li><a href="#"> How it Works </a></li>
+	                        <li class=""><a href="#"> Pricing </a></li>
+	                        <!-- <li class=""><a href="#"> Community </a></li> -->
+	                        <li id=""><a href="index.html"> Log Out</a></li>
+	                    </ul>
+	                </div>
+	                <!-- /.navbar-collapse -->
+	            </div>
+	            <!-- /.container-fluid -->
+	        </nav>
+	    </div>
+    </div>
+</header>
+<body>
+	<div class="user-dashboard-wrapper">
+    	<section class="user_dashboard_sec">
+    		<div class="container-fluid">
+    			<div class="col-sm-3">
+    				<div class="sidebar_user_dashboard">
+    					<div class="image_div text-center user-profile-img-container">
+    						<img id="imgOutput" class="img-responsive user-profile-img" />
+    						<img id="prevImg" src="img/profile3.jpg" class="img-responsive user-profile-img" alt="profile image" />
+    						<span class="profile-edit-user-img-edit-icn"><i class="fa fa-pencil-square" aria-hidden="true"></i></span>
+							<input type="file" name="image" id="imageToUpload" accept="image/*" onchange="loadFile(event)">
+    						<h2 class="prof_title">John Doe</h2>
+    					</div>
+    					<ul class="service_provider_side_ul user_side_ul">
+    						<li class="active"><a href="userProfile.html"><i class="fa fa-user"></i> My Profile </a></li>
+    						<li><a href="userBooking.html"><i class="fa fa-book"></i> My Bookings</a></li>
+    						<li><a href="userTransaction.html"><i class="fa fa-credit-card"></i> My Transactions</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div class="col-sm-9">
+    				<div class="mainEra_user_dashboard">
+    					<i class="fa fa-user"></i>
+    					<div class="title_dashbord_wrap">
+    						<h2>My Profile</h2>
+    					</div>
+    					<div class="common_inner_sevice_provider profile_serv_provider">
+    						<div class="servi_pro_profile">
+    							<div class="hide_profile">
+        							<div class="comon_db_h4">
+        								<h4>Personal Information <span class="person_edit edit_btn hide_this"><i class="fa fa-edit"></i> Edit</span> <span class="person_edit edit_btn show_this"><i class="fa fa-reply"></i> Cancel</span></h4>
+        							</div>
+            						<div class="col-sm-12 hide_this">
+        								<div class="row">
+        									<div class="col-sm-12">
+        										<div class="row">
+					            					<div class="col-sm-4">
+					            						<div class="form-group my-cstm-form-group">
+					            							<label>First Name</label>
+														    <input type="text" class="form-control input_fitness black" value="Go" readonly="">
+														</div>
+					            					</div>
+					            					<div class="col-sm-4">
+					            						<div class="form-group my-cstm-form-group">
+					            							<label>Last Name</label>
+														    <input type="text" class="form-control input_fitness black" value="Fresh" readonly="">
+														</div>
+					            					</div>
+					            					<div class="col-sm-4">
+					            						<div class="form-group my-cstm-form-group">
+					            							<label>Email</label>
+														    <input type="email" class="form-control input_fitness black" value="go4fresh.in" readonly="">
+														</div>
+					            					</div>
+        										</div>
+        									</div>					
+			            				</div>
+		            				</div>
+		            				<div class="col-sm-12 show_this">
+        								<div class="row">
+        									<div class="col-sm-12">
+        										<div class="row">
+					            					<div class="col-sm-4">
+					            						<div class="form-group my-cstm-form-group">
+					            							<label>First Name</label>
+														    <input type="text" class="form-control input_fitness black" value="Go">
+														</div>
+					            					</div>
+					            					<div class="col-sm-4">
+					            						<div class="form-group my-cstm-form-group">
+					            							<label>Last Name</label>
+														    <input type="text" class="form-control input_fitness black" value="Fresh">
+														</div>
+					            					</div>
+					            					<div class="col-sm-4">
+					            						<div class="form-group my-cstm-form-group">
+					            							<label>Email</label>
+														    <input type="email" class="form-control input_fitness black" value="go4fresh.in">
+														</div>
+					            					</div>
+        										</div>
+        									</div>				
+			            				</div>
+		            				</div>
+	            				</div>
+	            				<div class="hide_profile">
+        							<div class="comon_db_h4">
+        								<h4>Change Password <span class="change_pswd edit_btn hide_this"><i class="fa fa-edit"></i> Change</span> <span class="change_pswd edit_btn show_this"><i class="fa fa-reply"></i> Cancel</span></h4>
+        							</div>
+		            				<div class="col-sm-12 show_this">
+        								<div class="row">
+			            					<div class="col-sm-4">
+			            						<div class="form-group">
+			            							<label>Current Password</label>
+												    <input type="text" class="form-control input_fitness black" placeholder="Current Password">
+												</div>
+			            					</div>
+			            					<div class="col-sm-4">
+			            						<div class="form-group">
+			            							<label>New Password</label>
+												    <input type="text" class="form-control input_fitness black" placeholder="New Password">
+												</div>
+			            					</div>
+			            					<div class="col-sm-4">
+			            						<div class="form-group">
+			            							<label>Confirm Password</label>
+												    <input type="text" class="form-control input_fitness black" placeholder="Confirm Password">
+												</div>
+			            					</div>
+			            					<div class="col-sm-12">
+			            						<div class="form-group text-left">
+													<button type="button" class="btn btn_fit"> Change Password </button>
+												</div>
+			            					</div>
+			            				</div>
+		            				</div>
+	            				</div> 
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    </div>
+    <!-- <section class="footer-section black-bg white-color">
+		<div class="container">
+			<div class="footer-top">
+				<div class="col-sm-3">
+					<div class="common-col colm-1">
+						<ul type="none">
+							<li class="ft-main-heding">Company</li>
+							<li><a href="javascript:void(0);">Contact Us</a></li>
+							<li><a href="javascript:void(0);">Our Story</a></li>
+							<li><a href="javascript:void(0);">Help Center</a></li>
+							<li><a href="javascript:void(0);">FAQ's</a></li>
+							<li><a href="signupProvider.html">Become a Partner</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="common-col colm-2">
+						<ul type="none">
+							<li class="ft-main-heding">Membership</li>
+							<li><a href="javascript:void(0);">Free Trial</a></li>
+							<li><a href="javascript:void(0);">Log in</a></li>
+							<li><a href="javascript:void(0);">Sign Up</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="common-col colm-3">
+						<ul type="none">
+							<li class="ft-main-heding">Locations</li>
+							<li><a href="javascript:void(0);">Denmark</a></li>
+							<li><a href="javascript:void(0);">Norway</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="common-col colm-4">
+						<ul type="none">
+							<li class="ft-main-heding">Social</li>
+							<li><a href="javascript:void(0);"><i class="fa fa-facebook fa fa-fw"></i>Facebook</a></li>
+							<li><a href="javascript:void(0);"><i class="fa fa-twitter fa fa-fw"></i>Twitter</a></li>
+							<li><a href="javascript:void(0);"><i class="fa fa-instagram fa fa-fw"></i>Instagram</a></li>
+							<li><a href="javascript:void(0);"><i class="fa fa-youtube fa fa-fw"></i>Youtube</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="col-sm-4">
+					<div class="bt-footer">
+						<a href="javascript:void(0);">© 2019 One Vay. All Rights Reserved.</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="bt-footer">
+						<a href="javascript:void(0);">abc@gmail.com</a>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<div class="bt-footer">
+						<a href="javascript:void(0);">9876543210</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- scripts files -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.timepicker.js"></script>	
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('.show_this').hide();
+			$('.person_edit').click(function(){
+				$(this).closest('.hide_profile').find('.hide_this').toggle();
+				$(this).closest('.hide_profile').find('.show_this').toggle();
+			});
+			$('.email_edit').click(function(){
+				$(this).closest('.hide_profile').find('.hide_this').toggle();
+				$(this).closest('.hide_profile').find('.show_this').toggle();
+			});
+			$('.number_edit').click(function(){
+				$(this).closest('.hide_profile').find('.hide_this').toggle();
+				$(this).closest('.hide_profile').find('.show_this').toggle();
+			});
+			$('.change_pswd').click(function(){
+				$(this).closest('.hide_profile').find('.hide_this').toggle();
+				$(this).closest('.hide_profile').find('.show_this').toggle();
+			});
+		});
+	</script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+		    $('.dashboard-facility').select2({
+		    	placeholder : "Choose Facilities you provide"
+		    });
+		});
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$('input.timepicker').timepicker({});
+    	});
+    </script>
+    <script type="text/javascript">
+		$('#imgOutput').hide();
+		var loadFile = function(event) {
+		    var output = document.getElementById('imgOutput');
+		    output.src = URL.createObjectURL(event.target.files[0]);
+		    $('#imgOutput').show();
+		    $('#prevImg').hide();
+		}
+    </script>
+</body>
+</html>

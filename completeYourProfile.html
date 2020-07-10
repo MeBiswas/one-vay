@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> ONE VAY </title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css">
+</head>
+<header class="header_main internal-pg-header index">
+    <div class="header_min">
+    	<div class="container">
+	        <nav class="navbar nav-sec">
+	            <div class="container-fluid">
+	                <!-- Brand and toggle get grouped for better mobile display -->
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="index.html">One Vay</a>
+	                </div>
+	                <!-- Collect the nav links, forms, and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                    <ul class="nav navbar-nav navbar-right navigation-ul">
+	                        <li class=""><a href="aboutUs.html"> About Us </a></li>
+	                        <li><a href="#"> How it Works </a></li>
+	                        <li class=""><a href="#"> Pricing </a></li>
+	                        <!-- <li class=""><a href="#"> Community </a></li> -->
+	                        <li id=""><a href="#login_modal" data-toggle="modal"> Log In</a></li>
+	                    </ul>
+	                </div>
+	                <!-- /.navbar-collapse -->
+	            </div>
+	            <!-- /.container-fluid -->
+	        </nav>
+	    </div>
+    </div>
+</header> 
+<body>
+	<div class="pg-wrapper">
+		<div class="login-pg">
+			<div class="container">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="login-form-div">
+						<div class="col-sm-12 text-center">
+							<div class="section-heading blue-color pd-bt-10">
+								<h2 class="sign-up-provider-head">Complete Profile</h2>
+								<span class="divider"></span>
+							</div>
+						</div>
+						<form enctype="multipart/form-data">
+							<div class="smp-frm">
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label><i class="fa fa-briefcase fa-fw"></i>Business Name</label>
+										<input type="text" class="form-control cust-input" placeholder="Enter Business Name">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label><i class="fa fa-list fa-fw"></i>Choose Facilities you provide</label>
+										<div class="complete-profile-facility-container">
+											<select class="complete-profile-facility" multiple="multiple">
+												<option value="1">Hot Yoga</option>
+												<option value="2">Boxing</option>
+												<option value="3">Crossfit</option>
+												<option value="4">Swimming</option>
+												<option value="5">Barre</option>
+												<option value="6">Tap Dance</option>
+												<option value="7">Muscle Max</option>
+												<option value="8">Spinning</option>
+												<option value="9">Indoor Rock Climbing</option>
+												<option value="10">Baking Class</option>
+												<option value="11">Kids Class</option>
+												<option value="12">Beauty Salon</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label><i class="fa fa-clock-o fa-fw"></i>Open Time</label>
+										<input type="email" class="form-control cust-input timepicker" placeholder="Enter Open Time">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label><i class="fa fa-clock-o fa-fw"></i>Closing Time</label>
+										<input type="text" class="form-control cust-input timepicker" placeholder="Enter Closing Time">
+									</div>
+								</div>
+								<div class="col-sm-12 text-center">
+									<div class="form-group upload-proof-container">
+										<label>Upload ID proofs</label>
+										<div class="photo-container">
+                                            <div class="photos-sec">
+                                                <!-- Image Uploading here -->
+                                            </div>
+                                            <div class="add-phots text-center ">
+                                                <a href="javascript:void(0);" class="btn btn-up-phots" id="upld-gal">
+                                                	<input type="file" name="upld-gal" class="upload-img-inpt">
+                                                	<img src="img/upload-cloud-2.png" class="img-responsive complete-profile-img">
+                                                </a>
+                                            </div>
+                                        </div>
+										<!-- <input type="file" name="uploadFile"> -->
+										<!-- <img src="img/upload-cloud-2.png" class="img-responsive complete-profile-img"> -->
+									</div>
+								</div>
+	                       		<div class="col-sm-12 text-center">
+	                       			<div class="internl-pg-btn">
+										<div class="form-group">
+											<a class="trial btn" href="dashboard.html">Submit for Admin Approval</a>
+										</div>
+									</div>
+								</div>
+	                       	</div>
+						</form>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!-- scripts files -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.timepicker.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+		    $('.complete-profile-facility').select2({
+		    	placeholder : "Choose Facilities"
+		    });
+		});
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$('input.timepicker').timepicker({});
+    	});
+    </script>
+    <!-- Gallery upload Profile -->
+    <script type="text/javascript">
+        $('input[name="upld-gal"]').on('change', function () {
+          var input = this;
+            var reader = new FileReader();
+            reader.onload = function(){
+              var dataURL = reader.result;
+             var output = $('.phot-upld img');
+              output.src = dataURL;
+              $('.photos-sec').append('<div class="phot-upld"><img src="'+ dataURL +'" class="img-responsive" /><div class="btn-rmv text-center"><a class="btn btn-remov"  data-toggle="tooltip" title="Delete Image"><i class="fa fa-trash"></i></a></div></div>'); 
+
+              $('.btn-remov').on('click',function(){
+                $(this).closest('.uploaded-section').remove();
+              });
+            };
+            reader.readAsDataURL(input.files[0]);
+        });
+    </script>
+    <!-- Gallery upload Profile -->
+</body>
+</html>

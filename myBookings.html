@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ONE VAY</title>
+	<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" /> -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/datatables.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<header class="header_main index fixed-header">
+    <div class="header_min">
+    	<div class="container">
+	        <nav class="navbar nav-sec">
+	            <div class="container-fluid">
+	                <!-- Brand and toggle get grouped for better mobile display -->
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="index.html">One Vay</a>
+	                </div>
+	                <!-- Collect the nav links, forms, and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                    <ul class="nav navbar-nav navbar-right navigation-ul">
+	                        <li class=""><a href="aboutUs.html"> About Us </a></li>
+	                        <li><a href="#"> How it Works </a></li>
+	                        <li class=""><a href="#"> Pricing </a></li>
+	                        <!-- <li class=""><a href="#"> Community </a></li> -->
+	                        <li id=""><a href="index.html"> Log Out</a></li>
+	                    </ul>
+	                </div>
+	                <!-- /.navbar-collapse -->
+	            </div>
+	            <!-- /.container-fluid -->
+	        </nav>
+	    </div>
+    </div>
+</header>
+<body>
+	<div class="user-dashboard-wrapper">
+    	<section class="user_dashboard_sec">
+    		<div class="container-fluid">
+    			<div class="col-sm-3">
+    				<div class="sidebar_user_dashboard">
+    					<div class="image_div text-center">
+    						<img src="img/logo1.png" class="img-responsive" alt="profile image" />
+    						<h2 class="prof_title">Go Fresh</h2>
+    					</div>
+    					<ul class="service_provider_side_ul user_side_ul">
+    						<li><a href="myProfile.html"><i class="fa fa-user"></i> My Profile </a></li>
+    						<li><a href="myFacilities.html"><i class="fa fa-list-alt"></i> My Facilities</a></li>
+    						<li><a href="manageSlots.html"><i class="fa fa-sliders"></i> Manage Slots </a></li>
+    						<li><a href="viewSlots.html"><i class="fa fa-eye"></i> View Slots</a></li>
+    						<li class="active"><a href="myBookings.html"><i class="fa fa-book"></i> My Bookings</a></li>
+    						<li><a href="earnings.html"><i class="fa fa-credit-card"></i> Earnings</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div class="col-sm-9">
+    				<div class="mainEra_user_dashboard">
+    					<i class="fa fa-book"></i>
+    					<div class="title_dashbord_wrap">
+    						<h2>Bookings</h2>
+    					</div>
+    					<div class="common_inner_sevice_provider facility_serv_provider">
+    						<div class="facility_provider_wrap">
+    							<form class="" method="" action="">
+        							<div class="daily_facility comon_facility">
+        								<div class="table-responsive myBookings-data-table">
+        									<table class="table table-bordered table-striped table-hover my-table">
+        										<thead class="thead-light">
+        											<tr>
+        												<th width="9%">Sr. No.</th>
+        												<th width="18%">Transaction ID</th>
+        												<th width="12%">Name</th>
+        												<th width="25%">Facility Booked</th>
+        												<th width="16%">Booking Date</th>
+        												<th width="10%">Amount</th>
+        												<th width="10%">Credits</th>
+        											</tr>
+        										</thead>
+        										<tbody>
+        											<tr>
+        												<td>1</td>
+        												<td>#5647898709</td>
+        												<td>abc</td>
+        												<td>Facility 1, Facility 2, Facility 3</td>
+        												<td>01 Mar 2019</td>
+        												<td>$100</td>
+        												<td>10</td>
+        											</tr>
+        											<tr>
+        												<td>2</td>
+        												<td>#5642545575</td>
+        												<td>def</td>
+        												<td>Facility 4, Facility 5, Facility 6</td>
+        												<td>02 Mar 2019</td>
+        												<td>$200</td>
+        												<td>10</td>		
+        											</tr>
+        											<tr>
+        												<td>3</td>
+        												<td>#5642425454</td>
+        												<td>ghi</td>
+        												<td>Facility 7, Facility 8, Facility 9</td>
+        												<td>03 Mar 2019</td>
+        												<td>$400</td>
+        												<td>10</td>
+        											</tr>
+        											<tr>
+        												<td>4</td>
+        												<td>#564245645667</td>
+        												<td>jkl</td>
+        												<td>Facility 10, Facility 11, Facility 12</td>
+        												<td>04 Mar 2019</td>
+        												<td>$500</td>
+        												<td>10</td>
+        											</tr>
+        										</tbody>
+        									</table>
+        								</div>	
+    								</div>
+        						</form>
+    						</div>    						
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    </div>    
+	<!-- scripts files -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>      
+    <script type="text/javascript" src="js/datatables.js"></script> 
+    <script type="text/javascript"  src="js/button.datatables.js"></script>
+    <script type="text/javascript"  src="js/jszip.datatables.js"></script>
+    <script type="text/javascript"  src="js/buttonshtml.datatables.js"></script> 
+    <script type="text/javascript">
+        $(document).ready( function () {
+            // $('.my-table').DataTable();
+        } );
+        $(document).ready(function() {
+            $('.my-table').DataTable({
+                "lengthMenu": [[10, 25, 40, -1], [10, 25, 40, "All"]],
+                "aaSorting": [],
+                "oLanguage": {
+                    "sSearch": "Search by any Keyword :"
+                },
+                // "bLengthChange": false,
+                dom: 'ftilBp',
+                buttons: []
+            });
+        });
+    </script>   	
+</body>
+</html>

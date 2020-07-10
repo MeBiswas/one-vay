@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ONE VAY</title>
+	<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" /> -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/multiselect.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<header class="header_main index fixed-header">
+    <div class="header_min">
+    	<div class="container">
+	        <nav class="navbar nav-sec">
+	            <div class="container-fluid">
+	                <!-- Brand and toggle get grouped for better mobile display -->
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="index.html">One Vay</a>
+	                </div>
+	                <!-- Collect the nav links, forms, and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                    <ul class="nav navbar-nav navbar-right navigation-ul">
+	                        <li class=""><a href="aboutUs.html"> About Us </a></li>
+	                        <li><a href="#"> How it Works </a></li>
+	                        <li class=""><a href="#"> Pricing </a></li>
+	                        <!-- <li class=""><a href="#"> Community </a></li> -->
+	                        <li id=""><a href="index.html"> Log Out</a></li>
+	                    </ul>
+	                </div>
+	                <!-- /.navbar-collapse -->
+	            </div>
+	            <!-- /.container-fluid -->
+	        </nav>
+	    </div>
+    </div>
+</header>
+<body>
+	<div class="user-dashboard-wrapper">
+    	<section class="user_dashboard_sec">
+    		<div class="container-fluid">
+    			<div class="col-sm-3">
+    				<div class="sidebar_user_dashboard">
+    					<div class="image_div text-center">
+    						<img src="img/logo1.png" class="img-responsive" alt="profile image" />
+    						<h2 class="prof_title">Go Fresh</h2>
+    					</div>
+    					<ul class="service_provider_side_ul user_side_ul">
+    						<li><a href="myProfile.html"><i class="fa fa-user"></i> My Profile </a></li>
+    						<li><a href="myFacilities.html"><i class="fa fa-list-alt"></i> My Facilities</a></li>
+    						<li><a href="manageSlots.html"><i class="fa fa-sliders"></i> Manage Slots </a></li>
+    						<li class="active"><a href="viewSlots.html"><i class="fa fa-eye"></i> View Slots</a></li>
+    						<li><a href="myBookings.html"><i class="fa fa-book"></i> My Bookings</a></li>
+    						<li><a href="earnings.html"><i class="fa fa-credit-card"></i> Earnings</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div class="col-sm-9">
+    				<div class="mainEra_user_dashboard">
+    					<i class="fa fa-eye"></i>
+    					<div class="title_dashbord_wrap">
+    						<h2>View Slots</h2>
+    					</div>
+    					<div class="common_inner_sevice_provider facility_serv_provider">
+    						<div class="facility_provider_wrap">
+    							<form class="" method="" action="">
+        							<div class="daily_facility comon_facility">
+            							<div class="row pd-tb-1">
+            								<div class="col-md-3">
+            									<div class="form-group select-slot-container">
+													<label for="facility">Select Facility</label>
+													<select class="select-facility" multiple="multiple">
+														<option selected="selected">Boxing</option>
+														<option>Gym</option>
+														<option>Swimming</option>
+													</select>
+												</div> 
+            								</div>
+            								<div class="col-md-4">
+            									<div class="form-group select-slot-container">
+													<label for="amenities">Choose Amenities</label>
+													<select class="choose-amenity" multiple="multiple">
+														<option selected="selected">Amenity 1</option>
+														<option selected="selected">Amenity 2</option>
+														<option selected="selected">Amenity 3</option>
+														<option>Amenity 4</option>
+														<option>Amenity 5</option>
+														<option>Amenity 6</option>
+													</select>
+												</div>
+            								</div>
+            								<div class="col-md-1 col-md-offset-4">
+            									<div class="view-slots-edit-btn-container">
+            										<span class="view-slots-edit-btn" data-toggle="tooltip" title="Edit Slots">
+            											<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        											</span>
+            									</div>
+            								</div>
+            							</div>
+            							<div class="row pd-tb-1">
+            								<div class="col-md-3">
+            									<div class="form-group select-slot-container">
+													<label for="operations">Operational Days</label>
+													<select class="operational-days" multiple="multiple">
+														<option selected="selected">Sunday</option>
+														<option selected="selected">Monday</option>
+														<option selected="selected">Tuesday</option>
+														<option selected="selected">Wednesday</option>
+														<option selected="selected">Thursday</option>
+														<option selected="selected">Friday</option>
+														<option selected="selected">Saturday</option>
+													</select>
+												</div>
+            								</div>
+            								<div class="col-md-2">
+            									<div class="form-group">
+			            							<label>Start Time</label>
+												    <input type="text" class="form-control input_fitness black timepicker" value="9:00 AM" readonly="readonly">
+												</div>
+            								</div>
+            								<div class="col-md-2">
+            									<div class="form-group">
+			            							<label>End Time</label>
+												    <input type="text" class="form-control input_fitness black timepicker" value="11:00 AM" readonly="readonly">
+												</div>
+            								</div>
+            								<div class="col-md-3">
+            									<div class="form-group select-slot-container">
+													<label for="facility">Slot Interval</label>
+													<select class="slot-interval" multiple="multiple">
+														<option>30 Minutes</option>
+														<option selected="selected">60 Minutes</option>
+														<option>90 Minutes</option>
+													</select>
+												</div>
+            								</div>
+            							</div>
+            							<div class="row pd-tb-1">
+            								<div class="col-md-3">
+            									<div class="form-group">
+            										<label for="booking">Maximum Number of Online Booking</label>
+            										<input type="text" class="form-control my-cstm-input" placeholder="Online Booking" value="50" readonly="readonly">
+            									</div>
+            								</div>
+            								<div class="col-md-2">
+            									<div class="form-group">
+            										<label for="booking">Add Price for One Class</label>
+            										<input type="text" class="form-control my-cstm-input check-val" placeholder="$" value="10" readonly="readonly">
+            									</div>
+            								</div>
+        									<div class="credits-container">
+        										<span class="credits-text">2 Credits</span>
+        									</div>
+            							</div>
+            							<div class="row pd-tb-1 generate-slots">
+            								<div class="col-md-12">
+	            								<div class="panel-group" id="accordion">
+													<div class="panel panel-default">
+														<div class="panel-heading cstm-panel-heading">
+															<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+																<h4 class="panel-title">Sunday</h4>
+															</a>
+														</div>
+														<div id="collapse1" class="panel-collapse collapse in">
+															<div class="panel-body">
+																<div class="slot-timing-container">
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge" type="button" data-toggle="dropdown" aria-expanded="false">9:00 AM - 10:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio1" checked="checked" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio1" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge disabld" type="button" data-toggle="dropdown" aria-expanded="false">10:00 AM - 11:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio2" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio2" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="panel panel-default">
+														<div class="panel-heading cstm-panel-heading">
+															<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+																<h4 class="panel-title">Monday</h4>
+															</a>
+														</div>
+														<div id="collapse2" class="panel-collapse collapse">
+															<div class="panel-body">
+																<div class="slot-timing-container">
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge" type="button" data-toggle="dropdown" aria-expanded="false">9:00 AM - 10:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio3" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio3" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge disabld" type="button" data-toggle="dropdown" aria-expanded="false">10:00 AM - 11:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio4" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio4" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="panel panel-default">
+														<div class="panel-heading cstm-panel-heading">
+															<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+																<h4 class="panel-title">Tuesday</h4>
+															</a>
+														</div>
+														<div id="collapse3" class="panel-collapse collapse">
+															<div class="panel-body">
+																<div class="slot-timing-container">
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge" type="button" data-toggle="dropdown" aria-expanded="false">9:00 AM - 10:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio5" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio5" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge disabld" type="button" data-toggle="dropdown" aria-expanded="false">10:00 AM - 11:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio6" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio6" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="panel panel-default">
+														<div class="panel-heading cstm-panel-heading">
+															<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+																<h4 class="panel-title">Wednesday</h4>
+															</a>
+														</div>
+														<div id="collapse4" class="panel-collapse collapse">
+															<div class="panel-body">
+																<div class="slot-timing-container">
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge" type="button" data-toggle="dropdown" aria-expanded="false">9:00 AM - 10:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio7" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio7" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge disabld" type="button" data-toggle="dropdown" aria-expanded="false">10:00 AM - 11:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio8" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio8" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="panel panel-default">
+														<div class="panel-heading cstm-panel-heading">
+															<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+																<h4 class="panel-title">Thursday</h4>
+															</a>
+														</div>
+														<div id="collapse5" class="panel-collapse collapse">
+															<div class="panel-body">
+																<div class="slot-timing-container">
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge" type="button" data-toggle="dropdown" aria-expanded="false">9:00 AM - 10:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio9" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio9"  type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge disabld" type="button" data-toggle="dropdown" aria-expanded="false">10:00 AM - 11:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio10" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio10" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="panel panel-default">
+														<div class="panel-heading cstm-panel-heading">
+															<a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+																<h4 class="panel-title">Friday</h4>
+															</a>
+														</div>
+														<div id="collapse6" class="panel-collapse collapse">
+															<div class="panel-body">
+																<div class="slot-timing-container">
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge" type="button" data-toggle="dropdown" aria-expanded="false">9:00 AM - 10:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio11" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio11" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge disabld" type="button" data-toggle="dropdown" aria-expanded="false">10:00 AM - 11:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio12" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio12" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="panel panel-default">
+														<div class="panel-heading cstm-panel-heading">
+															<a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+																<h4 class="panel-title">Saturday</h4>
+															</a>
+														</div>
+														<div id="collapse7" class="panel-collapse collapse">
+															<div class="panel-body">
+																<div class="slot-timing-container">
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge" type="button" data-toggle="dropdown" aria-expanded="false">9:00 AM - 10:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio13" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio13" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																	<span class="dropdown badge_dd_slot no_basic slot-timing-badge">
+																		<badge class="badge dropdown-toggle cstm-badge disabld" type="button" data-toggle="dropdown" aria-expanded="false">10:00 AM - 11:00 AM
+																		<span class="caret"></span></badge>
+																		<ul class="dropdown-menu comn_chk_wrap slot-timing-dropdown">
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Enable
+																						<input name="radio14" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		    <li>
+																		    	<div class="form-group">
+																					<label class="custom_label"> Disable
+																						<input name="radio14" checked="" type="radio">
+																						<span class="checkmark radio"></span>
+																					</label>
+																				</div>
+																		    </li>
+																		</ul>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>													
+												</div>
+            								</div>
+            							</div>
+            							<div class="row pd-tb-1 generate-slots">
+            								<div class="col-md-12">
+												<div class="form-group">
+													<!-- <label>Add Description About Class</label> -->
+													<textarea class="form-control text_fitness" rows="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis auteirure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<!-- <label>What users will have to bring.</label> -->
+													<textarea class="form-control text_fitness disabl-resz" rows="1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+												</div>
+											</div>
+            							</div>      								
+    								</div>
+        						</form>
+    						</div>    						
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    </div>    
+	<!-- scripts files -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script> 
+    <script type="text/javascript" src="js/multiselect.js"></script> 
+    <script type="text/javascript" src="js/jquery.timepicker.js"></script>
+    <script type="text/javascript">
+    	(function($){
+		    $(window).on("load",function(){
+		        $(".chk_fac").mCustomScrollbar({
+		            axis:"y",
+		            theme:"dark",
+		            scrollEasing:"linear"
+		        });
+		    });
+		})(jQuery);	
+    </script>
+    <script type="text/javascript">
+    	$('.select-facility').multipleSelect({
+			placeholder: "Choose Category",
+			single: "true"
+		});
+		$('.slot-interval').multipleSelect({
+			single: "true"
+		});
+		$('.choose-amenity').multipleSelect({
+			placeholder: "Choose Category",
+		})
+		$('.operational-days').multipleSelect({
+			placeholder: "Select Days",
+		});
+    </script> 
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$('input.timepicker').timepicker({});
+    	});
+    </script> 
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.view-slots-edit-btn').on('click',function(){
+    			window.location.href='manageSlots.html';
+    		});
+    	});
+    </script>	
+</body>
+</html>

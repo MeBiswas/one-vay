@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ONE VAY</title>
+	<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" /> -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        div.earnings-page-table div.dataTables_wrapper div.dataTables_info {
+            display: none;
+        }
+    </style>
+</head>
+<header class="header_main index fixed-header">
+    <div class="header_min">
+    	<div class="container">
+	        <nav class="navbar nav-sec">
+	            <div class="container-fluid">
+	                <!-- Brand and toggle get grouped for better mobile display -->
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="index.html">One Vay</a>
+	                </div>
+	                <!-- Collect the nav links, forms, and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                    <ul class="nav navbar-nav navbar-right navigation-ul">
+	                        <li class=""><a href="aboutUs.html"> About Us </a></li>
+	                        <li><a href="#"> How it Works </a></li>
+	                        <li class=""><a href="#"> Pricing </a></li>
+	                        <!-- <li class=""><a href="#"> Community </a></li> -->
+	                        <li id=""><a href="index.html"> Log Out</a></li>
+	                    </ul>
+	                </div>
+	                <!-- /.navbar-collapse -->
+	            </div>
+	            <!-- /.container-fluid -->
+	        </nav>
+	    </div>
+    </div>
+</header>
+<body>
+	<div class="user-dashboard-wrapper">
+    	<section class="user_dashboard_sec">
+    		<div class="container-fluid">
+    			<div class="col-sm-3">
+    				<div class="sidebar_user_dashboard">
+    					<div class="image_div text-center">
+    						<img src="img/profile3.jpg" class="img-responsive user-profile-img" alt="profile image" />
+    						<h2 class="prof_title">John Doe</h2>
+    					</div>
+    					<ul class="service_provider_side_ul user_side_ul">
+    						<li><a href="userProfile.html"><i class="fa fa-user"></i> My Profile </a></li>
+    						<li><a href="userBooking.html"><i class="fa fa-book"></i> My Bookings</a></li>
+    						<li class="active"><a href="userTransaction.html"><i class="fa fa-credit-card"></i> My Transactions</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div class="col-sm-9">
+    				<div class="mainEra_user_dashboard">
+    					<i class="fa fa-credit-card"></i>
+    					<div class="title_dashbord_wrap">
+    						<h2> My Transactions</h2>
+    					</div>
+    					<div class="common_inner_sevice_provider facility_serv_provider">
+    						<div class="facility_provider_wrap">
+    							<form class="" method="" action="">
+        							<div class="daily_facility comon_facility">
+        								<div class="all_past_bukings comon_slots">
+                                            <div class="range_serch row">
+                                                <div class="col-sm-7">
+                                                    <div class="row">
+                                                        <!-- <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control input_fitness black date_pick" id="startDate" placeholder="Start Date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5">
+                                                            <div class="form-group">
+                                                                <input type="text" id="endDate" class="form-control input_fitness black date_pick" placeholder="End Date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="form-group">
+                                                                <button class="btn btn_fit appl_dat_filter"> Apply </button>
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table table-responsive earnings-page-table">
+                                                <table class="table table-bordered table-striped table-hover" id="allPast_table">
+                                                    <thead class="thead-light">
+                                                        <tr>
+                                                            <th>Sr. No.</th>
+                                                            <th>Transactions ID</th>
+                                                            <th>Date</th>
+                                                            <th>Payment</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>#2455</td>
+                                                            <td class="earned-amount">20 Mar 2019</td>
+                                                            <td class="action_td">
+                                                                <a href="viewEarnings.html" class="earnings_action_btn">Completed</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>#2455</td>
+                                                            <td class="earned-amount7">20 Mar 2019</td>
+                                                            <td class="action_td">
+                                                                <a href="javascript:void(0)" class="earnings_action_btn">Completed</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>#2455</td>
+                                                            <td class="earned-amount1">20 Mar 2019</td>
+                                                            <td class="action_td">
+                                                                <a href="javascript:void(0)" class="earnings_action_btn">Completed</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>#2455</td>
+                                                            <td class="earned-amount2">20 Mar 2019</td>
+                                                            <td class="action_td">
+                                                                <a href="javascript:void(0)" class="earnings_action_btn">Completed</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>#2455</td>
+                                                            <td class="earned-amount3">20 Mar 2019</td>
+                                                            <td class="action_td">
+                                                                <a href="javascript:void(0)" class="earnings_action_btn">Completed</a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>                                                    
+                                                </table>
+                                                <!-- <div class="total-earnings-container">
+                                                    <span class="total-earnings-title">Total Earning :</span><span class="total-earnings-amount"> $3200</span>
+                                                </div> -->
+                                            </div>
+                                        </div>	
+    								</div>
+        						</form>
+    						</div>    						
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    </div>    
+	<!-- scripts files -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>      
+    <script type="text/javascript" src="js/datatables.js"></script> 
+    <script type="text/javascript"  src="js/button.datatables.js"></script>
+    <script type="text/javascript"  src="js/jszip.datatables.js"></script>
+    <script type="text/javascript"  src="js/buttonshtml.datatables.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(function () {
+                var dateToday = new Date();
+                $('#startDate').datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy",
+                    language: "en",
+                    autoclose: true,
+                    todayHighlight: true,
+                    endDate: 'today'
+                });        
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(function () {
+                var dateToday = new Date();
+                $('#endDate').datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy",
+                    language: "en",
+                    autoclose: true,
+                    todayHighlight: true,
+                    endDate: 'today'
+                });        
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#allPast_table').DataTable({
+                
+            });
+        });
+    </script>         	
+</body>
+</html>

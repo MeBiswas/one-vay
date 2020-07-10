@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> ONE VAY </title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<header class="header_main internal-pg-header index">
+    <div class="header_min">
+    	<div class="container">
+	        <nav class="navbar nav-sec">
+	            <div class="container-fluid">
+	                <!-- Brand and toggle get grouped for better mobile display -->
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    </button>
+	                    <a class="navbar-brand" href="index.html">One Vay</a>
+	                </div>
+	                <!-- Collect the nav links, forms, and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                    <ul class="nav navbar-nav navbar-right navigation-ul">
+	                        <li class=""><a href="aboutUs.html"> About Us </a></li>
+	                        <li><a href="#index-how-it-works-section"> How it Works </a></li>
+	                        <li class=""><a href="pricing.html"> Pricing </a></li>
+	                        <!-- <li class=""><a href="#"> Community </a></li> -->
+	                        <li id=""><a href="#login_modal" data-toggle="modal"> Log In</a></li>
+	                    </ul>
+	                </div>
+	                <!-- /.navbar-collapse -->
+	            </div>
+	            <!-- /.container-fluid -->
+	        </nav>
+	    </div>
+    </div>
+</header> 
+<body>
+	<div class="pg-wrapper">
+		<div class="login-pg" style="background-image: url('img/contactUsBG.png');">
+			<div class="container">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="login-form-div">
+						<div class="col-sm-12 text-center">
+							<div class="section-heading blue-color pd-bt-20">
+								<h2>Contact Us</h2>
+								<span class="divider"></span>
+							</div>
+						</div>
+						<form>							
+							<div class="smp-frm">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label><i class="fa fa-user fa-fw"></i>First Name</label>
+										<input type="text" class="form-control cust-input" placeholder="Enter First Name">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label><i class="fa fa-user fa-fw"></i>Last Name</label>
+										<input type="text" class="form-control cust-input" placeholder="Enter Last Name">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label><i class="fa fa-envelope fa-fw"></i>Email</label>
+										<input type="email" class="form-control cust-input" placeholder="Enter Email">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">									
+            							<label><i class="fa fa-commenting fa-fw"></i>Message</label>
+									    <textarea value="wertyyi" class="form-control textera_fitness black" rows="5">Enter Message Here..</textarea>
+									</div>
+								</div>
+	                       		<div class="col-sm-12 text-center">
+	                       			<div class="internl-pg-btn">
+										<div class="form-group">
+											<a class="trial btn" href="javascript:;" data-toggle="modal" data-target="#msgSuccess">Send</a>
+										</div>
+									</div>
+								</div>
+	                       	</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- scripts files -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- OTP Modal -->
+	<div class="modal fade" id="msgSuccess" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header msg-mdl-head">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<!-- <h4 class="modal-title"></h4> -->
+				</div>
+				<div class="modal-body msg-mdl-body">
+					<div class="success-img-container">
+						<img src="img/checkmark-2.gif" class="img-responsive success-img">
+					</div>
+					<h3 class="success-msg">Your message has been received.</h3>
+				</div>
+				<div class="modal-footer msg-mdl-foot">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal ends -->
+</body>
+</html>

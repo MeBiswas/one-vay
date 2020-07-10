@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'AvenirLTStd-Black';
+  src: url('../fonts/avenir/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),  url('AvenirLTStd-Black.otf')  format('opentype'),
+         url('../fonts/avenir/AvenirLTStd-Black.woff') format('woff'), url('AvenirLTStd-Black.ttf')  format('truetype'), url('AvenirLTStd-Black.svg#AvenirLTStd-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url('../fonts/avenir/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),  url('AvenirLTStd-Book.otf')  format('opentype'),
+         url('../fonts/avenir/AvenirLTStd-Book.woff') format('woff'), url('AvenirLTStd-Book.ttf')  format('truetype'), url('AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url('../fonts/avenir/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),  url('AvenirLTStd-Book.otf')  format('opentype'),
+         url('../fonts/avenir/AvenirLTStd-Book.woff') format('woff'), url('AvenirLTStd-Book.ttf')  format('truetype'), url('AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-HeavyOblique';
+  src: url('../fonts/avenir/AvenirLTStd-HeavyOblique.eot?#iefix') format('embedded-opentype'),  url('AvenirLTStd-HeavyOblique.otf')  format('opentype'),
+         url('../fonts/avenir/AvenirLTStd-HeavyOblique.woff') format('woff'), url('AvenirLTStd-HeavyOblique.ttf')  format('truetype'), url('AvenirLTStd-HeavyOblique.svg#AvenirLTStd-HeavyOblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Light';
+  src: url('../fonts/avenir/AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'),  url('AvenirLTStd-Light.otf')  format('opentype'),
+         url('../fonts/avenir/AvenirLTStd-Light.woff') format('woff'), url('AvenirLTStd-Light.ttf')  format('truetype'), url('AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirLTStd-Medium';
+  src: url('../fonts/avenir/AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'),  url('AvenirLTStd-Medium.otf')  format('opentype'),
+         url('../fonts/avenir/AvenirLTStd-Medium.woff') format('woff'), url('AvenirLTStd-Medium.ttf')  format('truetype'), url('AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: rgb(48, 48, 48);
+    font-family: 'AvenirLTStd-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+html body p {
+    color: #2e2e2e;
+    line-height: 1.5;
+}
+html body a {
+    color: #eee;
+    cursor: pointer;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/*-------------------------------*/
+/*        common-sections        */
+/*-------------------------------*/
+.header-section,
+.top-studios-section,
+.htw-section,
+.choose-and-schedule-section,
+.all-studios-section,
+.ratings-section,
+.footer-section,
+.img_sldr,
+.ratings-stars{
+    width: 100%;
+    float: left;
+}
+.header-section,
+.top-studios-section,
+.choose-and-schedule-section,
+.all-studios-section,
+.ratings-section,
+.footer-section,
+.htw-section{
+    padding: 46px 16px;
+}
+.header_main .btn.header-btn{
+   background-color: transparent;
+}
+.header_main .btn.header-btn:hover{
+    background-color: #91d400;
+}
+/*-----------------------------------------*/
+/*             common heading              */
+/*-----------------------------------------*/
+.section-heading{
+    position: relative;
+    padding-bottom: 40px;
+}
+.section-heading h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: #30302e;
+}
+.section-heading .divider {
+    height: 2px;
+    width: 100px;
+    background: #00050a;
+    display: inline-block;
+    position: relative;
+}
+.section-heading .divider::after {
+    position: absolute;
+    content: '\f04d';
+    font-family: FontAwesome;
+    top: -10px;
+    right: 45px;
+    color: #3a83ff;
+}
+
+/*-----------------------------------------*/
+/*              Header section             */
+/*-----------------------------------------*/
+
+.header_main.index {
+    width: 100%;
+    float: left;
+    position: absolute;
+    z-index: 10;
+    /*background-color: #c5fb514d;*/
+}
+.header_main a.navbar-brand{
+    color: #fff !important;
+}
+.header_main.index .navbar{
+    margin-bottom: 2px;
+}
+.header_main.index .navbar-brand{
+    padding: 22px 15px;
+    font-size: 34px;
+    color: #313131;
+}
+.header_main.index .nav > li > a{
+    margin-top: 10px;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*text-indent: -7px;*/
+}
+.header_main.index .nav > li > a:hover, .nav > li > a:focus{
+    background-color: unset;
+    color: #91d400;
+}
+.fixed-header .nav > li > a:hover{
+    color: #91d400 !important;
+}
+/*.header_main.index .nav > li > a::after{
+    width: 0%;
+    transition: all 0.5s ease-in;    
+    background: #fff;
+    left: 16px;
+    bottom: 12px;
+    position: absolute;
+    content: "";
+    height: 2px;
+}
+.header_main.index .nav > li > a:hover::after{
+    background: #fff;
+    left: 16px;
+    bottom: 12px;
+    position: absolute;
+    content: "";
+    height: 2px;
+    transition: all 0.5s ease-in;
+    width: 40%;
+}*/
+.fixed-header{
+    border:none;
+    position: fixed !important;
+    top: 0px;
+    background-color:#fff !important;
+    color: #000;
+    transition: all 0.5s ease-in;
+    z-index: 10;
+    box-shadow: 0px 0px 4px #676060;
+}
+.fixed-header a.navbar-brand{
+    color: #000 !important;
+}
+.fixed-header .nav > li > a{
+    color: #000 !important;
+}
+.fixed-header .nav > li > a:hover::after{
+    background: #000 !important;
+}
+/*-----------------------------------------*/
+/*                slider section           */
+/*-----------------------------------------*/
+.slider_home{
+    width: 100%;
+    float: left;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    /*padding-top: 20px;*/
+    /*background-image: url('../img/slider.png');*/
+    /*background-size: contain;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right;*/
+}
+.slider_home .slider-imgs img{
+    height: 600px;
+    width: 100%;
+    float: left;
+    object-fit: cover;
+    text-align: center;
+}
+.slider-img{
+    position: relative;
+}
+.slider-img::after{
+    position: absolute;
+    height: 100%;
+    background-color: #03030399;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+}
+.slider-content{
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    width: 100%;
+    float: left;display: inline-block;
+    z-index: 10;
+    text-align: center;
+}
+.typing-content {
+    font-size: 70px;
+    /*font-family: 'work_sansthin';*/
+    font-weight: 900;
+    color: #171717;
+}
+.inr-caption{
+    /*font-family: 'work_sansthin';*/
+    font-weight: 600;
+    font-size: 26px;
+}
+.slider-btn-div {
+    position: absolute;
+    bottom: 70px;
+    left: 135px;
+}
+.slider-btn-div a.exp{
+    color: #000;
+    font-size: 24px;
+    background-color: #91d400;
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin-right: 20px;
+    border: 2px solid #91d400;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.slider-btn-div a.trial{
+    color: #91d400;
+    font-size: 24px;
+    border:2px solid #91d400;
+    padding: 5px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.slider-btn-div a.exp:hover{
+    background-color: #85c300;
+    border: 2px solid #85c300;
+}
+.slider-btn-div h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: bold;
+}
+.slider-btn-div h2.inr-caption{
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
